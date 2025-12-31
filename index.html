@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>پلاس مووی </title>
+    <link rel="stylesheet" href="css/style.css" />
+      <link rel="icon" type="image/png" href="icon/icon.png">
+  </head>
+  <body class="dark">
+<header class="top-bar">
+  <!-- Right: Logo -->
+  <h1 class="logo">
+    <a id="a-logo" href="index.html"> پلاس مووی +</a>
+  </h1>
+
+  <!-- Center: Search -->
+  <div class="search-container">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="جستجوی فیلم..."
+      autocomplete="off"
+    />
+    <div id="searchDropdown" class="search-dropdown"></div>
+  </div>
+
+  <!-- Left: Theme toggle -->
+  <button id="themeToggle" class="icon-btn" aria-label="تغییر تم"></button>
+</header>
+
+<!-- Navigation -->
+<nav class="main-nav">
+  <a href="search.html?sort=newest">جدیدترین‌ها</a>
+  <a href="search.html?sort=popular">محبوب‌ترین‌ها</a>
+
+  <div class="dropdown">
+    <button class="dropbtn"> دسته‌بندی </button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#ffffff"></path> </g></svg>
+    <div class="dropdown-content">
+      <a href="search.html?category=action">اکشن</a>
+      <a href="search.html?category=drama">درام</a>
+      <a href="search.html?category=sci-fi">علمی‌تخیلی</a>
+      <a href="search.html?category=crime">جنایی</a>
+      <a href="search.html?category=horror">ترسناک</a>
+      <a href="search.html?category=musical">موزیکال</a>
+      <a href="search.html?category=fantasy">فانتزی</a>
+      <a href="search.html?category=thrilling">هیجان انگیز</a>
+      <a href="search.html?category=comedy">کمدی</a>
+      <a href="search.html?category=family">خانوادگی</a>
+      <a href="search.html?category=comedy">کمدی</a>
+    </div>
+  </div>
+
+  <a href="about.html">درباره ما</a>
+</nav>
+<section class="hero-slider">
+  <div class="slides" id="slides"></div>
+
+  <button class="nav prev" id="prevBtn"><svg fill="#000000" viewBox="0 0 24 24" id="right-alt" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M21.45,10.91,15.53,3.3a2,2,0,0,0-2.78-.38L10.29,4.77a2,2,0,0,0-.46,2.71l.44.65H4.13a2,2,0,0,0-2,2v4a2,2,0,0,0,2,2h6.14l-.44.66a2,2,0,0,0,.46,2.71l2.46,1.84a1.94,1.94,0,0,0,1.19.4A2,2,0,0,0,15.53,21l5.91-7.61A2,2,0,0,0,21.45,10.91Z" style="fill: #ffffff;"></path></g></svg></button>
+  <button class="nav next" id="nextBtn"><svg fill="#000000" viewBox="0 0 24 24" id="right-alt" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M21.45,10.91,15.53,3.3a2,2,0,0,0-2.78-.38L10.29,4.77a2,2,0,0,0-.46,2.71l.44.65H4.13a2,2,0,0,0-2,2v4a2,2,0,0,0,2,2h6.14l-.44.66a2,2,0,0,0,.46,2.71l2.46,1.84a1.94,1.94,0,0,0,1.19.4A2,2,0,0,0,15.53,21l5.91-7.61A2,2,0,0,0,21.45,10.91Z" style="fill: #ffffff;"></path></g></svg></button>
+</section>
+
+
+   <section class="home-section">
+  <h2 class="section-title">جدیدترین‌ها</h2>
+  <section class="movies-grid draggable" id="newestMovies"></section>
+</section>
+
+<section class="home-section">
+  <h2 class="section-title">محبوب‌ترین‌ها</h2>
+  <section class="movies-grid draggable" id="popularMovies"></section>
+</section>
+
+<section class="home-section">
+  <h2 class="section-title">پیشنهاد شده برای شما</h2>
+  <section class="movies-grid draggable" id="moviesGrid"></section>
+</section>
+
+    <script src="js/theme.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/search.js"></script>
+
+  </body>
+</html>

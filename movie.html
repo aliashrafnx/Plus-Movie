@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title> جزئیات فیلم |  پلاس مووی  </title>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="icon/icon.png">
+</head>
+<body class="dark">
+
+<header class="top-bar">
+  <h1 class="logo"><a id="a-logo" href="index.html"> پلاس مووی +</a></h1>
+   <div class="search-container">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="جستجوی فیلم..."
+      autocomplete="off"
+    />
+    <div id="searchDropdown" class="search-dropdown"></div>
+  </div>
+  <button id="themeToggle">حالت تاریک</button>
+</header>
+<!-- Navigation -->
+<nav class="main-nav">
+  <a href="search.html?sort=newest">جدیدترین‌ها</a>
+  <a href="search.html?sort=popular">محبوب‌ترین‌ها</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">دسته‌بندی</button>
+    <div class="dropdown-content">
+      <a href="search.html?category=action">اکشن</a>
+      <a href="search.html?category=drama">درام</a>
+      <a href="search.html?category=sci-fi">علمی‌تخیلی</a>
+      <a href="search.html?category=crime">جنایی</a>
+      <a href="search.html?category=horror">ترسناک</a>
+      <a href="search.html?category=musical">موزیکال</a>
+      <a href="search.html?category=fantasy">فانتزی</a>
+      <a href="search.html?category=thrilling">هیجان انگیز</a>
+      <a href="search.html?category=comedy">کمدی</a>
+      <a href="search.html?category=family">خانوادگی</a>
+      <a href="search.html?category=comedy">کمدی</a>
+    </div>
+  </div>
+
+  <a href="about.html">درباره ما</a>
+</nav>
+<section class="movie-hero" id="movieHero">
+  <div class="movie-hero-overlay">
+    <div class="movie-hero-content" id="movieContent"></div>
+  </div>
+</section>
+
+<section class="movie-details" id="movieDetails"></section>
+<section class="comments-section">
+  <h3>نظرات کاربران</h3>
+
+  <form id="commentForm">
+    <textarea id="commentInput" placeholder="نظر خود را بنویسید..." required></textarea>
+    <button type="submit">ارسال نظر</button>
+  </form>
+
+  <div id="commentsList"></div>
+</section>
+
+<script src="js/theme.js"></script>
+<script src="js/search.js"></script>
+<script src="js/movie.js"></script>
+</body>
+</html>
