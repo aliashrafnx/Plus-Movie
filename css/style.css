@@ -977,7 +977,6 @@ body.player-body {
   .main-nav {
     gap: 24px;
     padding: 8px 12px;
-    margin-bottom: 80px;
   }
 
   .main-nav a,
@@ -1056,9 +1055,12 @@ body.player-body {
     width: 80%;
     margin: auto;
   }
-
+.movie-info{
+  margin-bottom: -200px;
+}
   .movie-info h2 {
     font-size: 24px;
+    padding-top: 300px;
   }
 
   .movie-meta {
@@ -1077,6 +1079,7 @@ body.player-body {
   .comments-section {
     padding: 24px;
     font-size: 16px;
+    margin-top: 200px;
   }
 
   #commentInput {
