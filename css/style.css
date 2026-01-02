@@ -997,7 +997,7 @@ body.player-body {
 
   /* ---------- SEARCH ---------- */
   .search-container {
-    width: 60%;
+    width: 50%;
   }
 
   .search-container input {
@@ -1049,6 +1049,7 @@ body.player-body {
     padding: 24px;
     gap: 20px;
     margin-top: 20px;
+    padding-top: 50px;
   }
 
   .movie-poster {
