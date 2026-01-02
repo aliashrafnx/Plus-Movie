@@ -997,11 +997,12 @@ background-color: #c7c753;
   .main-nav {
     gap: 24px;
     padding: 8px 12px;
+    margin-bottom: 40px;
   }
 
   .main-nav a,
   .dropbtn {
-    font-size: 15px;
+    font-size: 13px;
     padding-top: 20px;
     padding-bottom: 12px;
   }
@@ -1016,7 +1017,7 @@ background-color: #c7c753;
 
   /* ---------- SEARCH ---------- */
   .search-container {
-    width: 60%;
+    width: 50%;
   }
 
   .search-container input {
