@@ -253,6 +253,9 @@ body, .container, .video-controls, .video-timer, .options{
   .right .pic-in-pic{
     display: none;
   }
+  #video{
+padding: auto;
+  }
 }
 .player-top {
   position: absolute;
