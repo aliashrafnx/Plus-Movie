@@ -65,8 +65,7 @@ const hideControls = () => {
     if(mainVideo.paused) return;
     timer = setTimeout(() => {
         container.classList.remove("show-controls");
-        container.classList.remove("player-top");
-    }, 3000);
+    }, 2000);
 }
 hideControls();
 

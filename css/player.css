@@ -253,9 +253,6 @@ body, .container, .video-controls, .video-timer, .options{
   .right .pic-in-pic{
     display: none;
   }
-  #video{
-padding: auto;
-  }
 }
 .player-top {
   position: absolute;
@@ -277,7 +274,7 @@ padding: auto;
 }
 
 .movie-title {
-  font-size: 34px;
+  font-size: 24px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
