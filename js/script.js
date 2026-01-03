@@ -62,7 +62,7 @@ function togglePlay() {
   }
 }
 const hideControls = () => {
-    if(mainVideo.paused) return;
+    if(!mainVideo.paused) return;
     timer = setTimeout(() => {
         container.classList.remove("show-controls");
     }, 2000);
